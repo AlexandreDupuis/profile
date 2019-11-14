@@ -97,9 +97,58 @@ div.card {
 }
 
 
-
-.buttn-center {
+.box {
+/*  width: 50%;
+  border: 2px solid #EDEAEA;*/
   text-align: center;
 }
 
+button {
+  padding: 10px;
+  color: ##EDEAEA;
+  border: 2px solid #a2a2a2;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 0 auto;
+  width: 500px;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 400;
+  right: 400;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: hidden;
+  opacity: 3;
+}
+
+.popup {
+  display: inline-block;
+  margin: 100px auto;
+  padding: 20px;
+  transition: all 10s ease-in-out;
+}
+
+
+.popup .close {
+  top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #06D85F;
+}
+
+
+.popup .content {
+  max-height: auto;
+  max-width: auto;
+  overflow: auto;
+}
 
